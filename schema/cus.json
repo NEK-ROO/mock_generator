@@ -1,0 +1,14 @@
+[
+  {
+    "name": "customer_uid",
+    "type": "string"
+  },
+  {
+    "name": "date_of_birth",
+    "type": "date"
+  },
+  {
+    "name": "cus_cat",
+    "type": "integer"
+  }
+]

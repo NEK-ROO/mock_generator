@@ -1,0 +1,10 @@
+data_id: ken-golden # can be arbitrary ones, better to be unique for you, e.g. CL, JIRA No (avoid overwritten by others accidentially)
+models: models
+seed: seed # static reference tables
+static: static # static data loaded to pandas dataframe to generate columns
+
+table_suffix: {{ table_suffix }} # when all models generated, create views with this suffix against the models
+
+param_default:
+  date_lower_bound: 2019-01-01
+  date_upper_bound: 2019-06-30

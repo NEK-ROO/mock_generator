@@ -6,7 +6,7 @@ from faker import Faker
 
 import pandas as pd
 
-class GENDUM:
+class GenUtil:
   def __init__(self, seed=0):
     Faker.seed(seed)
     self.fake = Faker()

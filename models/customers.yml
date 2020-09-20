@@ -1,4 +1,5 @@
-name: {country}_qfd_customers_{release} # {} means using parameters
+# {country}_qfd_customers_{release}_{PROJ_VERSION} will first generate
+name: '{{ country }}_qfd_customers_{{ release }}' # {} means using parameters
 materials: table # or view
 
 independent columns:
