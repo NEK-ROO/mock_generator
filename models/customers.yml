@@ -1,0 +1,21 @@
+name: {country}_qfd_customers_{release} # {} means using parameters
+materials: table # or view
+
+independent columns:
+- name: customer_uid # name of the field
+  type: string # data type in BigQuery standard, https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types
+  desc: 
+    pattern: "rstr.xeger('[0-9]{5}')" # use library - 'rstr'
+# - name: age
+#   type: integer
+#   def: "random.randint(15, 90)"
+- name: date_of_birth
+  type: date
+  desc:
+    lower_bound: 2018-01-01
+    upper_bound: 2020-03-31
+- name: cus_cat
+  type: integer
+  desc: 
+    lower_bound: 0
+    upper_bound: 5
